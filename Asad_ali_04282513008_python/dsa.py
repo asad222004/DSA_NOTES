@@ -300,20 +300,36 @@ while for removing
 2.pop
 """
 
-list= [1,'a', 'asad',0.1]
-print(list)
-print(list[0])
-list.append(2) #adds at the end postion
-list.append((2,3,4,)) #adds a list to a tuple
-list.append(["asad", "r"]) #adds a list in a list
-print(list)
-list.insert(3,"ali") # 3 defines position( must to insert )
-print(list)
-list.extend([3,4,6,"Rajput"]) #adds multiple values at the same time at end of list
-print(list)
-list.remove(1) #removes the 1st occurence of the element 1 in list use iterator to remove the more 
-print(list) 
-list.pop(0) #removes the 1st character but by default removes the last character 
-print(list)
+# list= [1,'a', 'asad',0.1]
+# print(list)
+# print(list[0])
+# list.append(2) #adds at the end postion
+# list.append((2,3,4,)) #adds a list to a tuple
+# list.append(["asad", "r"]) #adds a list in a list
+# print(list)
+# list.insert(3,"ali") # 3 defines position( must to insert )
+# print(list)
+# list.extend([3,4,6,"Rajput"]) #adds multiple values at the same time at end of list
+# print(list)
+# list.remove(1) #removes the 1st occurence of the element 1 in list use iterator to remove the more 
+# print(list) 
+# list.pop(0) #removes the 1st character but by default removes the last character 
+# print(list)
 
-"""while using the """
+# """while using the pop fuction and for to iter over a list then be mindfull 
+# because what is 1 during the 1st round might be 0 at 2nd  """
+# """IMPORTANT"""
+# list =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17] #prints the numbers from 0(1) to -6 position that starts from backward
+# print(list[:-6])
+# print(list[-6:-1])
+
+"""tuples like lists can store different types of data but unlike they are immutable and their processing is faster
+lists consume more memory compared to tuples and are more error prone while have many in-built functions
+Creation of Python tuple without the use of parentheses is known as Tuple Packing-> 1,2,3,4,5,6;
+can contain any no: and type of data type
+"""
+tuple = (1,2,3,4,5,"asad",0.1,0.2);
+tuple1 = (1,); #the single value in tuple is given , at end to make it tuple
+
+
+
