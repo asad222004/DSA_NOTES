@@ -230,7 +230,14 @@ Is collection of homogeneous elements in contiguous memory locations( Contiguous
 that a program or process is stored in one continuous block of memory locations.
 In simple words, all the required memory locations are placed next to each other without gaps).
 A user can treat lists as arrays. However, user cannot constraint the type of elements stored in a list. 
-If you create arrays using the array module, all elements of the array must be of the same type"""
+If you create arrays using the array module, all elements of the array must be of the same type
+->methods for addition in arrays:
+1.Appened
+2.insert
+->methods to remove
+1.Remove
+2.Pop
+"""
 
 import array as arr
 # array1 =arr.array('d',[1.2,2.9,3.6,4.5,5.9])
@@ -277,4 +284,36 @@ import array as arr
 
 """LISTS
 can store the non-homogeneous data and are mutable 
+are orderd and have a definite count
+can have duplicate values
+Unlike Sets, list doesnot need a built-in function for creation of list.
+Unlike Sets, list may contain mutable elements.
+Lists are a useful tool for preserving a sequence of data and further iterating over it.
+Tuples can also be added to a list
+while lsit can be added to a lsit
+->THREE METHODS ARE USED FOR ADDITION IN LIST
+1.Appened
+2.insert
+3.extend
+while for removing 
+1.remove
+2.pop
 """
+
+list= [1,'a', 'asad',0.1]
+print(list)
+print(list[0])
+list.append(2) #adds at the end postion
+list.append((2,3,4,)) #adds a list to a tuple
+list.append(["asad", "r"]) #adds a list in a list
+print(list)
+list.insert(3,"ali") # 3 defines position( must to insert )
+print(list)
+list.extend([3,4,6,"Rajput"]) #adds multiple values at the same time at end of list
+print(list)
+list.remove(1) #removes the 1st occurence of the element 1 in list use iterator to remove the more 
+print(list) 
+list.pop(0) #removes the 1st character but by default removes the last character 
+print(list)
+
+"""while using the """
