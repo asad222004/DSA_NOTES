@@ -264,5 +264,13 @@ import array as arr
 
 a =arr.array('i',[1,2,3,4,5,6])
 print(a.index(3)) #gives the index of the specified value in its 1st occurrence
+a[1]=0 #changes the value at the specified index
+print(a)
+a.remove(4) #removes the value 4 present at any 1st index 
+print(a) 
+a.pop(0) # removes the element at index 0 by default removes the last element
+print(a)
+a.pop()
+print(a)
 
 
