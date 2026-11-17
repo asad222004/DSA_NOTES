@@ -225,7 +225,8 @@
 # print(str.rstrip('-'))
 
 """ARRAYS ,[]-> is an index operator and index must be integer
-collection of homogeneous elements in contiguous memory locations( Contiguous memory means
+is mutable
+Is collection of homogeneous elements in contiguous memory locations( Contiguous memory means
 that a program or process is stored in one continuous block of memory locations.
 In simple words, all the required memory locations are placed next to each other without gaps).
 A user can treat lists as arrays. However, user cannot constraint the type of elements stored in a list. 
@@ -262,15 +263,18 @@ import array as arr
 # print(x)
 
 
-a =arr.array('i',[1,2,3,4,5,6])
-print(a.index(3)) #gives the index of the specified value in its 1st occurrence
-a[1]=0 #changes the value at the specified index
-print(a)
-a.remove(4) #removes the value 4 present at any 1st index 
-print(a) 
-a.pop(0) # removes the element at index 0 by default removes the last element
-print(a)
-a.pop()
-print(a)
+# a =arr.array('i',[1,2,3,4,5,6])
+# print(a[::-1]) # prints the list in reverse order
+# print(a.index(3)) #gives the index of the specified value in its 1st occurrence
+# a[1]=0 #changes the value at the specified index
+# print(a)
+# a.remove(4) #removes the value 4 present at any 1st index 
+# print(a) 
+# a.pop(0) # removes the element at index 0 by default removes the last element
+# print(a)
+# a.pop()
+# print(a)
 
-
+"""LISTS
+can store the non-homogeneous data and are mutable 
+"""
