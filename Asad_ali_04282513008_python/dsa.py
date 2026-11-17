@@ -1,10 +1,7 @@
 # print(abs(6))   
 # print(abs(-6)) #changes negative to positive
 
-# str1= "is21"
-# str2 = "1234567"
-# print(str1.isdigit()) #checks if string is digit or not
-# print(str2.isdigit())
+
 
 # print(str1.replace("is", "was")) #replaces the first string with second string
 # print(str1.replace("21", "was"))
@@ -173,31 +170,99 @@
 
 # we can delete a total string but can not change or delete a character in it because strings are immutable we can also update a string 
 # del str
-str = "ASAD ALI AD"
-str1 ="asad Ali"
-newstr = (str[:5] + "RAJPUT") 
-print(newstr)
+# str = "ASAD ALI AD"
+# str1 ="asad Ali"
+# newstr = (str[:5] + "RAJPUT") 
+# print(newstr)
 
-print(str.find("AD",0,1)) #gives -1 because the string "AD" is not found in the range of index 0 to 1
-print(str.find("AD",0,5))
-print(str.rfind("AD",0)) #finds the last occurrence of the specified value 9
+# print(str.find("AD",0,1)) #gives -1 because the string "AD" is not found in the range of index 0 to 1
+# print(str.find("AD",0,5))
+# print(str.rfind("AD",0)) #finds the last occurrence of the specified value 9
 
-if (str.startswith("AS")):
-    print("true")
-if (str.endswith("AD")):
-    print("true")
-if (str.isupper()): #these check whether the string is in upper case or lower case for all the letters in string
-    print("true")
-if (str1.islower()):
-    print("true")
-else:
-    print("false")
+# if (str.startswith("AS")):
+#     print("true")
+# if (str.endswith("AD")):
+#     print("true")
+# if (str.isupper()): #these check whether the string is in upper case or lower case for all the letters in string
+#     print("true")
+# if (str1.islower()):
+#     print("true")
+# else:
+#     print("false")
 
-print(str.capitalize()) #makes first letter capital just
-print(str.upper()) #makes all letters capital
-print(str.lower()) #makes all letters lowercase
-print(str.swapcase()) #makes all letters uppercase to lowercase and vice versa
-print(str.title()) #make 1st letter of each word capital
-print(str.count("A")) #counts the number of occurrences of the specified value
-print(str.count("A",0,5)) #counts the number of occurrences of the specified value in the range of index 0 to 5
+# print(str.capitalize()) #makes first letter capital just
+# print(str.upper()) #makes all letters capital
+# print(str.lower()) #makes all letters lowercase
+# print(str.swapcase()) #makes all letters uppercase to lowercase and vice versa
+# print(str.title()) #make 1st letter of each word capital
+# print(str.count("A")) #counts the number of occurrences of the specified value
+# print(str.count("A",0,5)) #counts the number of occurrences of the specified value in the range of index 0 to 5
+# print(str.center(22,'-')) #centers the string in a field of 22 characters wide and fills the rest with the specified character
+# print(str.rjust(22,'-')) #right justifies the string in a field of 22 characters wide and fills the rest with the specified character
+# print(str.ljust(22,'-')) #left justifies the string in a field of 22 characters wide and fills the rest with the specified character
+
+# str = "ASAD ALI"
+# str1= "is21"
+# str2 = "1234567"
+# str3 = "asadali"
+# str4 = "    "
+# print(str1.isdigit()) #checks if string is digit or not gives false because the string contains letters and numbers
+# print(str2.isdigit())
+# print(str.isalpha()) #checks if string have just alphabets not numbers or special characters or spaces
+# print(str3.isalpha())
+# print(str1.isalnum()) #checks if string have just alphabets and numbers not special characters or spaces
+# print(str3.isalnum())
+# print(str4.isspace()) #checks if string have just spaces not alphabets or numbers or special characters
+# print(str.isspace())
+# print(str4.join(str)) #joins the string with the specified string
+# #A    S    A    D         A    L    I
+# print(str.max()) #finds the maximum character in the string(based on ASCII value)
+# print(str.min())
+
+# str= "--ASAD ALI--"
+# print(str.strip('-'))
+# print(str.lstrip('-'))
+# print(str.rstrip('-'))
+
+"""ARRAYS ,[]-> is an index operator and index must be integer
+collection of homogeneous elements in contiguous memory locations( Contiguous memory means
+that a program or process is stored in one continuous block of memory locations.
+In simple words, all the required memory locations are placed next to each other without gaps).
+A user can treat lists as arrays. However, user cannot constraint the type of elements stored in a list. 
+If you create arrays using the array module, all elements of the array must be of the same type"""
+
+import array as arr
+# array1 =arr.array('d',[1.2,2.9,3.6,4.5,5.9])
+# array2 =arr.array('i',[1,2,3,4,5])
+# print(array2)
+# for i in array2:
+#     print(i) #prints the elements of the array
+# print(array2)
+# array1.insert(2, 6.7) #inserts the element at the specified index
+# print(array1)
+# array1.append(8.9) #adds element at the end of the array
+# print(array1)
+
+# x=arr.array('i',[])
+# print(x)
+# for i in range(6):
+#     x.append(int(input("Enter the number: "))) #adds the elements to the array
+# print(x)
+
+# x =arr.array('i',[])
+# z = True
+# while (z==True):
+#     num = int(input("Enter the number: "))
+#     z = input("Do you want to add more numbers? (y/n): ")
+#     x.append(num)
+#     if (z.lower()=='n'):
+#         z=False
+#     else:
+#         z=True
+# print(x)
+
+
+a =arr.array('i',[1,2,3,4,5,6])
+print(a.index(3)) #gives the index of the specified value in its 1st occurrence
+
 
