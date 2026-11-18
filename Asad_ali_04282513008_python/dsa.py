@@ -323,13 +323,36 @@ while for removing
 # print(list[:-6])
 # print(list[-6:-1])
 
-"""tuples like lists can store different types of data but unlike they are immutable and their processing is faster
+"""tuples like lists can store different types of data but unlike they are immutable (tuple1=(1,2,3,4); tuple1[0]=100 (invalid)) 
+and their processing is faster
 lists consume more memory compared to tuples and are more error prone while have many in-built functions
 Creation of Python tuple without the use of parentheses is known as Tuple Packing-> 1,2,3,4,5,6;
 can contain any no: and type of data type
+list operations are more error prone while of tuples are safe
+the elements in tuple are accessed via unpacking or indexing (or even by attribute in the case of named tuples)
+In unpacking of tuple number of variables on left hand side should be equal to number of values in a given tuple.
+In concatenation of tuple the + operator is used and
+Only same data structures can be combined with concatenation, an error arises if a list and a tuple are combined
+Tuples are immutable and hence they do not allow deletion of a part of it. Entire tuple gets deleted by the use of del() method.
+Printing of Tuple after deletion results to an Error.
 """
-tuple = (1,2,3,4,5,"asad",0.1,0.2);
-tuple1 = (1,); #the single value in tuple is given , at end to make it tuple
+# tuple = (1,2,3,4,5,"asad",0.1,0.2);
+# tuple1 = (1,); #the single value in tuple is given , at end to make it tuple
+# tuple2=(tuple,tuple1);
+# print(tuple2) #nested tuple
+# print((tuple1)*4)
+# n=3
+# for i in range (n):
+#     tuple1=(tuple1,);
+#     print(tuple1)
 
+# tuple=tuple("python"); # this converts the string into tuple
+# print(tuple[2])
 
+# tuple1= (1,3,4); #this assigns different values of tuple to different variables
+# a,b,c=tuple1 
+# print(a,b,c)
 
+"""DICTIONARY 
+
+"""
