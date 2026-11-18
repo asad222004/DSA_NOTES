@@ -2,7 +2,7 @@
 # print(abs(-6)) #changes negative to positive
 
 
-
+"""STRINGS are immutable"""
 # print(str1.replace("is", "was")) #replaces the first string with second string
 # print(str1.replace("21", "was"))
 
@@ -353,6 +353,124 @@ Printing of Tuple after deletion results to an Error.
 # a,b,c=tuple1 
 # print(a,b,c)
 
+
 """DICTIONARY 
+A collection which is changeable and indexed.
+behave like a data base
+In Python dictionaries are written with curly brackets, and they have keys and values
+it is built in in python. it used to hold data that are related
+While the values can be of any data type and can repeat, keys must 
+be of immutable type (string, number or tuple with immutable elements) and must be unique
+there are 2 methods for accessing values by using the key
+1. my_dict["key"]( this gives the key error if the value is not found)
+2. my_dict.get("key")( gives none if the value is not found)
+3. my_dict.keys() (gives all the keys in the dict)
+4. my_dict.values()( gives all the values in the dict)
+5. my_dict.items()( gives all the keys and values( in tuple pairs))
+--> In dict the values and keys can be added and removed while if the key value already exisits then the value gets updated and
+update() method can be used to update the key
+del operation can be used to delete a value or a whole dict or values from nested dict
+"""
+
+# dict={
+#     "name":"Asad",
+#     "Id":"04282513008"
+# }
+# print(dict)
+# print(dict["name"])
+# print(dict.get("Id"))
+# print(dict.keys())
+# print(dict.values())
+# print(dict.items()) #The returned format of this is a list made up of (key, value) tuple pairs with the dict_items view object
+
+# sammy = {'username': 'sammy-shark', 'online': True, 'followers': 987}
+# jesse = {'username': 'JOctopus', 'online': False, 'points': 723}
+
+# for common_key in sammy.keys() & jesse.keys(): #loop that iters over to look for common keys
+#     print(sammy[common_key], jesse[common_key]) #prints the values of common keys
+
+
+# for keys, values in sammy.items():
+#     print(keys,"----",values)
+
+# dict={}
+# dict["name"]="Asad Ali" #adds the items to a dict
+# print(dict)
+# dict["set_of_values"] = 1,2,3,4,5 #Adds a set of values to a single key
+# print(dict)
+# dict["name"]="Ahmed Faraz" #updates a value
+# print(dict)
+# dict["name"] ={"nested":{1:2,2:3}}
+# print(dict)
+# dict["id"] = 9873
+# dict["Followers"] = 129873
+# dict["cnic"] = 4354649873
+# print(dict)
+# del(dict["cnic"]) #removes all values and keys
+# del(dict["name"]["nested"])
+# removed=dict.pop("id") #removes the item from dict and return the value
+# print(removed)
+# remove=dict.popitem() #takes no argument and removes any arbitrary item and return it
+# print(remove)
+# print(dict)
+# dict.clear() #clears out all the items from a list and makes it empty
+# print(dict)
+
+"""STACKS (LIFO or FILO)
+is a linear collection of items (books in a box in and out from same position)
+in this random access is not allowed as we can do in lists or arrays
+helps to retrieve and store data sequentially
+takes O(1) time for insertion and deletion
+"""
+"""the below ones are lists and work as stacks the list stacks and deque stacks both uses append and pop fuctions
+deque gives O(1) time complexity while O(n) is of lists
+"""
+# stacks=[]
+# stacks.append('a')
+# stacks.append('b')
+# stacks.append('c') #adds elements to the last 
+# print(stacks)
+# print(stacks.pop()) #removes elements form the last
+# print(type(stacks))
+
+#from deque
+# from collections import deque
+# stacks=deque()
+# stacks.append("a")
+# stacks.append("b")
+# stacks.append("c")
+# stacks.append("d")
+# print(stacks)
+# print(type(stacks))
+# print(stacks.pop())
+# print(stacks.pop())
+
+# from queue import LifoQueue
+# stack=LifoQueue(maxsize=3) #if maxsize=0 then default and stack.full() can never be true
+# stack.put("a")
+# stack.put("b")
+# stack.put("c")
+# print(stack.qsize())
+# print("full: ",stack.full()) #gives true if the stack is full
+# print(stack.get()) #gives the element in lifo order
+# print(stack.get())
+# print(stack.qsize())
+# print(stack.get())
+# print("Empty: ",stack.empty())
+
+
+"""QUEUE (FIFO) open on both sides
+is a linear data structure
+enqueue: Adds an element to the end of the queue (if queue is full then it is said to be overflow condition) (have O(n)complexity)
+dequeue: Removes an element from the start of the queue (if queue is empty then it is said to be underflow condition) (have O(n)complexity)
+duplication is allowed in it
+they are slow compared to those stacks
 
 """
+import queue
+L=queue.Queue(maxsize=4)
+L.put("a")
+L.put("b")
+L.put("c")
+L.put("d")
+print(L)
