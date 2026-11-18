@@ -511,6 +511,4 @@ queue is built-in module of python
 # print(q.popleft())
 # print(q.popleft())
 
-"""LINKED LISTs
-
-"""
+"""DONE BRO"""
