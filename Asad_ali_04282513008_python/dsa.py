@@ -465,12 +465,52 @@ enqueue: Adds an element to the end of the queue (if queue is full then it is sa
 dequeue: Removes an element from the start of the queue (if queue is empty then it is said to be underflow condition) (have O(n)complexity)
 duplication is allowed in it
 they are slow compared to those stacks
+lists can also be used as queues and instead of enqueue and dequeue append() and pop() are used but they are slow compared to those 
+and take O(n) time
+queue can also be implemened by using deque class from collections module 
+deque is given priority inplace of list because it is quicker O(1) than of list O(n) 
+queue is built-in module of python
+"""
+
+# import queue
+# L=queue.Queue(maxsize=4)
+# print(L.qsize())
+# L.put("a")
+# L.put("b")
+# L.put("c")
+# L.put("d")
+# print(L.full())
+# print(L.qsize())
+# print(L.get()) #gives a 
+# print(L.get())
+# print(L.get())
+# print(L.get())
+# print(L.empty())
+
+# queue=[]
+# queue.append("a")
+# queue.append("b")
+# queue.append("c")
+# queue.append("d")
+# queue.append("e")
+# print(queue)
+# print(queue.pop(0))
+# print(queue.pop(0))
+# print(queue.pop(0))
+# print(queue.pop(0))
+
+# from collections import deque
+# q = deque()
+# q.append("A")
+# q.append("B")
+# q.append("C")
+# q.append("D")
+# print(q)
+# print(q.popleft())
+# print(q.popleft())
+# print(q.popleft())
+# print(q.popleft())
+
+"""LINKED LISTs
 
 """
-import queue
-L=queue.Queue(maxsize=4)
-L.put("a")
-L.put("b")
-L.put("c")
-L.put("d")
-print(L)
